@@ -1,0 +1,24 @@
+{
+  "name": "as-pfp-that-shapes-you",
+  "version": "1.0.0",
+  "description": "Heroku deployable WhatsApp profile picture updater powered by Baileys",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "NODE_ENV=development node server.js",
+    "check": "node --check server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.18",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
+    "pino": "^9.3.2",
+    "qrcode": "^1.5.3",
+    "sharp": "^0.33.4",
+    "uuid": "^10.0.0"
+  }
+}

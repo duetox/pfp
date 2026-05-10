@@ -1,0 +1,63 @@
+:root {
+  --bg: #f3f4f8;
+  --card: rgba(255, 255, 255, 0.92);
+  --text: #0a0f1d;
+  --muted: #636a7a;
+  --blue: #007aff;
+  --radius: 22px;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at top, #e7edff, var(--bg));
+}
+.app-shell {
+  max-width: 620px;
+  margin: 24px auto;
+  padding: 0 16px 40px;
+}
+header h1 { margin-bottom: 8px; }
+header p { color: var(--muted); }
+.card {
+  margin-top: 16px;
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: 0 12px 35px rgba(5, 30, 80, 0.08);
+}
+label { display: block; font-weight: 600; margin-bottom: 8px; }
+input[type="file"], input {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #dde2ef;
+  border-radius: 14px;
+  padding: 11px;
+}
+.primary {
+  width: 100%;
+  border: 0;
+  border-radius: 14px;
+  padding: 12px;
+  color: white;
+  background: linear-gradient(145deg, #0a84ff, #0065d2);
+  font-weight: 600;
+}
+.segmented-control { display: flex; gap: 8px; margin-bottom: 12px; }
+.segmented-control button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #d9dfef;
+  background: white;
+}
+.segmented-control .active {
+  background: #e6f1ff;
+  border-color: #7cb4ff;
+  color: #005dc2;
+}
+#statusText { margin-top: 10px; color: var(--muted); }
+#qrImage { width: 100%; max-width: 280px; display: block; margin-top: 14px; }
+.pair { margin-top: 14px; font-size: 32px; text-align: center; letter-spacing: 3px; font-weight: 700; }
+.hidden { display: none !important; }

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AS - PFP THAT SHAPES YOU!</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header>
+      <h1>AS - PFP THAT SHAPES YOU!</h1>
+      <p>Connect WhatsApp using QR / Pairing Code and upload any ratio image.</p>
+    </header>
+
+    <section class="card">
+      <label>Connection Mode</label>
+      <div class="segmented-control">
+        <button data-mode="qr" class="active">QR</button>
+        <button data-mode="pairing">Pairing Code</button>
+      </div>
+
+      <div id="phoneRow" class="hidden">
+        <label for="phoneInput">Phone Number (with country code)</label>
+        <input id="phoneInput" placeholder="e.g. 919876543210" />
+      </div>
+
+      <button id="connectBtn" class="primary">Connect WhatsApp</button>
+      <div id="statusText">Status: idle</div>
+      <img id="qrImage" class="hidden" alt="WhatsApp QR" />
+      <div id="pairingCode" class="pair hidden"></div>
+    </section>
+
+    <section class="card">
+      <label for="imageInput">Upload Image</label>
+      <input id="imageInput" type="file" accept="image/*" />
+      <button id="uploadBtn" class="primary">Update PFP</button>
+      <small>Image will be optimized to 640x640 while keeping detail quality.</small>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
