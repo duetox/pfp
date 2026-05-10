@@ -1,0 +1,18 @@
+{
+  "name": "AS - PFP THAT SHAPES YOU!",
+  "description": "WhatsApp display picture updater powered by Baileys with QR/Pairing login",
+  "keywords": ["node", "express", "baileys", "whatsapp", "heroku"],
+  "website": "https://example.com",
+  "repository": "https://example.com/as-pfp-that-shapes-you",
+  "stack": "heroku-24",
+  "env": {
+    "NODE_ENV": {
+      "description": "Runtime environment",
+      "value": "production"
+    },
+    "LOG_LEVEL": {
+      "description": "Pino log level",
+      "value": "info"
+    }
+  }
+}
